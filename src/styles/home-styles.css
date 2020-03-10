@@ -1,0 +1,54 @@
+.header_container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.background_pic{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: url('../styles/26456118e72744448b15ad22b72191af.jpg');
+    height:100%;
+    /* background-size:100% 100%; */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+}
+
+.title_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+    opacity: .6;
+    grid-row: 2;
+    grid-column: 2;
+    border: 2px black solid;
+    
+}
+
+.title{
+    font-size: 50px;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    
+}
+
+.quote{
+    /* font-size: 30px !important; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.go-home-pic{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://whyy.org/wp-content/uploads/2018/07/Lenape-768x576.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
