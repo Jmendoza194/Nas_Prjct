@@ -1,9 +1,12 @@
 import React from 'react';
-import TableContents from './TableContents'
-import Header from './Header'
-import Quote from './body/Quote'
+import TableContents from './TableContents';
+import Header from './Header';
+import Quote from './Intro/Quote';
+import VideoList from './Videos/VideoList';
+
 import '../../styles/grid-styles.css';
 import '../../styles/util-styles.css';
+
 
 class Home extends React.Component{
     constructor(){
@@ -11,6 +14,16 @@ class Home extends React.Component{
         this.state={
             table: ['Background', 'Videos','Help The Cause', 'Contact Us'],
             name:'Patrick is a cutie',
+            icons: ['More Info', 'Videos', 'How to Help'],
+            iconPics:['https://cdn1.iconfinder.com/data/icons/education-set-4/512/information-512.png',
+                      'https://cdn4.iconfinder.com/data/icons/web-interface-6/12/player-circle-512.png',
+                      'https://cdn4.iconfinder.com/data/icons/vectory-symbols/40/help_1-512.png'],
+            vidName:['We Are Mauna Kea', 'Kū Haʻaheo','No Video', 'No Video'],
+            vidDescription:['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+            videos:['https://www.youtube.com/embed/A2w8TWpSfgQ','https://www.youtube.com/embed/WbMX_LoT_YA','','']
         }
     }
 
@@ -18,17 +31,12 @@ class Home extends React.Component{
         return(
             <div className='full_container'>
                 <Header name={this.state.name} />
-                <Quote quote={' “The ground on which we stand is sacred ground. It is the blood of our ancestors.”'}/>
-                <div className='grid-container margin-up'>
-                    <TableContents content={this.state.table}/>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WbMX_LoT_YA" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-                </div>
-                
+                <Quote quote={' “The ground on which we stand is sacred ground. It is the blood of our ancestors.”'} icons={this.state.icons} iconPics={this.state.iconPics}/>
+                <VideoList vids={this.state.videos} vidName={this.state.vidName} vidDescription={this.state.vidDescription} />
             </div>
         )
     }
 }
 
 export default Home;
+

@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './home_page/Home';
-import '../styles/util-styles.css';
+import Home from './components/home_page/Home';
+import './styles/util-styles.css';
 
 class App extends React.Component{
     constructor(){

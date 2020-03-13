@@ -1,10 +1,11 @@
 import React from 'react';
+import IconList from './IconList';
 import '../../../styles/home-styles.css';
 import '../../../styles/util-styles.css';
 import '../../../styles/grid-styles.css';
-const Quote = ({ quote }) =>{
+const Quote = ({ quote, icons, iconPics }) =>{
     return(
-        <div className='super-margin-up intro_grid-container'>
+        <div className='intro_grid-container'>
             <div className='quote'>
                 <h1>{quote}</h1>
                 <h2>-Plenty Coups, principal chief of the Mountain Crows of the Crow Nation</h2>
@@ -28,10 +29,15 @@ const Quote = ({ quote }) =>{
                     </p>
                 </div>
                 <div className='background_item-3 '>
-                    <div className='go-home-pic'></div>
-                    
+                    <div className='go-home-pic'>
+                        <img className='' src='https://whyy.org/wp-content/uploads/2018/07/Lenape-768x576.jpg' alt='go home picture'/>
+                    </div>
                 </div>
             </div>
+            <div className='more-margin-up margin-bottom'>
+                <IconList categories={icons} icons={iconPics}/>
+            </div>
+            
         </div>
     )
 }
