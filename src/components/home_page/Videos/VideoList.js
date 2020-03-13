@@ -8,7 +8,10 @@ const VideoList = ({ vids, vidName, vidDescription }) =>{
     })
     return (
         <div className='video_grid-container'>
-            {renderList}
+            <h1>Videos</h1>
+            <div className='content-grid'>
+                {renderList}
+            </div>
         </div>
     )
 }

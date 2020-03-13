@@ -25,6 +25,10 @@
     font-size: 20px;
 }
 
+.supersmall-margin-up{
+    margin-top:5px;
+}
+
 .small-margin-up{
     margin-top: 10px;
 }

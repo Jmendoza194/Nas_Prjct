@@ -1,6 +1,7 @@
 .header_container{
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 
 .background_pic{
@@ -55,6 +56,7 @@
 .icon-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
     margin-left: 10%;
     margin-right:10%;
     text-align: center;

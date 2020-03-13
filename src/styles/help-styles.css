@@ -1,0 +1,47 @@
+.links-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.MaunaKea-Symbol{
+    width: 100%;
+    height: 100%;
+    display: block;
+    grid-column: 2;
+    margin-right:20px;
+
+}
+
+.Mapuche-symbol{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 20px;
+    
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #c0392b;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f1c40f;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    color:#f1c40f;
+    background-color: #c0392b;
+}
+
+.content{
+    text-align: center;
+    
+}

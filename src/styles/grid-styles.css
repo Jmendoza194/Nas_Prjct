@@ -56,10 +56,39 @@
 }
 
 .video_grid-container{
+    margin-top: 10px;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
+    grid-row:.3fr 1fr;
     grid-gap: 15px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.content-grid{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row:.2fr 1fr;
+}
+
+.Help-grid{
+    display: grid;
+    grid-template-rows: .3fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.symbol_grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: center;
+}
+
+.button_grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
